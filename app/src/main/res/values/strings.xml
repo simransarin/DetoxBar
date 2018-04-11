@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Detox Bar</string>
+    <string name="title_activity_drinks">DrinksActivity</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical"
+    tools:context="com.innprojects.smartbar.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="0.1"
+        android:foregroundGravity="center_vertical"
+        android:src="@drawable/ic_action_logout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/splash" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textView_style"
+            android:layout_weight="0.1"
+            android:textSize="20sp"
+            android:text="Member's Login"
+            android:textColor="@color/whitesmoketranspdark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/loginfieldsbg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                style="@style/editTextLogin_style"
+                android:textSize="25sp"
+                android:hint="Username"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/loginfieldsbg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText2"
+                style="@style/editTextLogin_style"
+                android:hint="Password"
+                android:textSize="25sp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/buttonlogin_style"
+            android:layout_weight="0.1"
+            android:textSize="25sp"
+            android:text="Login"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="true"
+                android:text="Show Password"
+                android:textColor="@color/whitesmoke" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="|"-->
+            <!--android:textColor="#FFF" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/forgotpass"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="0.45"-->
+            <!--android:text="Forgot password?"-->
+            <!--android:textColor="@color/whitesmoke" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

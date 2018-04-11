@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:paddingBottom="20dp"
+    android:paddingLeft="120dp"
+    android:paddingRight="120dp"
+    tools:context="com.innprojects.smartbar.Activity.LoginActivityMachine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/splashmachine" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textView_style"
+            android:text="Machine Login"
+            android:textSize="20sp"
+            android:layout_weight="0.1"
+            android:textColor="@color/whitesmoketranspdark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/loginfieldsbg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextmachine"
+                style="@style/editTextLogin_style"
+                android:hint="Username"
+                android:textSize="25sp"
+                android:inputType="text"
+                android:imeOptions="flagNoExtractUi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginfieldsbg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText2machine"
+                style="@style/editTextLogin_style"
+                android:textSize="25sp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeOptions="flagNoExtractUi"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login_buttonmachine"
+            style="@style/buttonlogin_style"
+            android:text="Login"
+            android:layout_weight="0.1"
+            android:textSize="25sp"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkboxmachine"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="0.45"
+                android:hapticFeedbackEnabled="true"
+                android:text="Show Password"
+                android:textColor="@color/whitesmoke" />
+
+
+            <CheckBox
+                android:id="@+id/checkboxmachine2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.45"
+                android:hapticFeedbackEnabled="true"
+                android:text="Remember Me"
+                android:textColor="@color/whitesmoke" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/forgotpass"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="0.45"-->
+                <!--android:text="Forgot password?"-->
+                <!--android:textColor="@color/whitesmoke" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

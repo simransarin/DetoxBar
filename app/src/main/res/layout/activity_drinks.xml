@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.innprojects.smartbar.Activity.DrinksActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewgiven"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/profile_button"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/proceedbutton_bg"
+                android:text="PROFILE"
+                android:textAllCaps="false"
+                android:textColor="@color/whitesmoke"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/proceed_button"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/proceedbutton_bg"
+                android:text="MAKE IT!"
+                android:textAllCaps="false"
+                android:textColor="@color/whitesmoke"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.35"
+                    android:background="@color/secondary_text"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="8dp"
+                            android:text="Detox Drink"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/whitesmoke"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/juice" />
+
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="5dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginLeft="35dp"-->
+                        <!--android:layout_marginRight="30dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:background="@color/whitesmoke" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:text="Price per drink"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/whitesmoke"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:layout_width="80dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/whitesmoke" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="start"
+                                android:text="₹ "
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/whitesmoke"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/totalcost_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="start"
+                                android:text="0"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/whitesmoke"
+                                android:textSize="40sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/primary_text"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/totalml_bg"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="S - "
+                            android:textColor="@color/whitesmoke"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/totalml_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/whitesmoke"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text=" ml"
+                            android:textColor="@color/whitesmoke"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/totalq_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/totalml_bg"
+                        android:gravity="center"
+                        android:text="Q - 1"
+                        android:textColor="@color/whitesmoke"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+                    android:background="@color/primary_text"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerviewfinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
